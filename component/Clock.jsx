@@ -18,15 +18,15 @@ const Clock = () => {
   const second = time.getSeconds();
 
   return (
-    <View style={{ borderWidth: 1, borderColor: "black" }}>
+    <View>
       <Svg height={360} width={360}>
         <Circle
           cx={180}
           cy={180}
           r={170}
-          stroke="black"
+          stroke="white"
           strokeWidth={10}
-          fill={"white"}
+          fill={"black"}
         />
         {/* Hour hand */}
         <Line
@@ -36,7 +36,7 @@ const Clock = () => {
           y2={90}
           strokeWidth={8}
           strokeLinecap="round"
-          stroke={"black"}
+          stroke={"white"}
           rotation={hour * 30 + minute * 0.5}
           origin={"180, 180"}
         />
@@ -48,7 +48,7 @@ const Clock = () => {
           y2={60}
           strokeWidth={6}
           strokeLinecap="round"
-          stroke={"black"}
+          stroke={"red"}
           rotation={(minute + second / 60) * 6}
           origin={"180, 180"}
         />
@@ -68,14 +68,44 @@ const Clock = () => {
         <Circle cx={180} cy={180} r={7} fill={"black"} />
 
         <Text
-          x={190}
-          y={25}
-          fontSize={20}
-          fill={"black"}
+          x={177}
+          y={75}
+          fontSize={80}
+          fill={"white"}
           fontWeight={"bold"}
           textAnchor="middle"
         >
           12
+        </Text>
+        <Text
+          x={177}
+          y={339}
+          fontSize={90}
+          fill={"white"}
+          fontWeight={"bold"}
+          textAnchor="middle"
+        >
+          6
+        </Text>
+        <Text
+          x={40}
+          y={206}
+          fontSize={90}
+          fill={"white"}
+          fontWeight={"bold"}
+          textAnchor="middle"
+        >
+          6
+        </Text>
+        <Text
+          x={318}
+          y={206}
+          fontSize={90}
+          fill={"white"}
+          fontWeight={"bold"}
+          textAnchor="middle"
+        >
+          6
         </Text>
       </Svg>
     </View>
