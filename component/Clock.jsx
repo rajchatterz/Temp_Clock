@@ -68,7 +68,7 @@ const Clock = () => {
         <Circle cx={180} cy={180} r={7} fill={"black"} />
 
         <Text
-          x={177}
+          x={179}
           y={75}
           fontSize={80}
           fill={"white"}
@@ -95,7 +95,7 @@ const Clock = () => {
           fontWeight={"bold"}
           textAnchor="middle"
         >
-          6
+          9
         </Text>
         <Text
           x={318}
@@ -105,7 +105,7 @@ const Clock = () => {
           fontWeight={"bold"}
           textAnchor="middle"
         >
-          6
+          3
         </Text>
       </Svg>
     </View>
