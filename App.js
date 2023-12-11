@@ -5,7 +5,7 @@ import Clock from './component/Clock';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.to start working on your app!</Text>
+      
       <Clock/>
       <StatusBar style="auto" />
     </View>
