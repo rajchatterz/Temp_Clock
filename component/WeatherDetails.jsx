@@ -28,7 +28,7 @@ function WeatherPosition() {
   };
 
   const fetchWeatherData = (lat, lon) => {
-    let api = "eb6fb7297946ecb24e97488b5b844405";
+    let api = "Enter Your Api Key";
     let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api}`;
 
     fetch(url)
