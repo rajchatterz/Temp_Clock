@@ -48,7 +48,7 @@ const Clock = () => {
           y2={60}
           strokeWidth={6}
           strokeLinecap="round"
-          stroke={"red"}
+          stroke={"white"}
           rotation={(minute + second / 60) * 6}
           origin={"180, 180"}
         />
@@ -89,7 +89,7 @@ const Clock = () => {
         </Text>
         <Text
           x={40}
-          y={206}
+          y={204}
           fontSize={90}
           fill={"white"}
           fontWeight={"bold"}
@@ -99,7 +99,7 @@ const Clock = () => {
         </Text>
         <Text
           x={318}
-          y={206}
+          y={204}
           fontSize={90}
           fill={"white"}
           fontWeight={"bold"}

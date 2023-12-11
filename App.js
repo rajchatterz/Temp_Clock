@@ -6,8 +6,8 @@ import WeatherDetails from './component/WeatherDetails';
 export default function App() {
   return (
     <View style={styles.container}>
-      <WeatherDetails/>
       <Clock />
+      <WeatherDetails/>
       <StatusBar style="auto" />
     </View>
   );
@@ -16,7 +16,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff6f6',
+    backgroundColor: '#000000',
     alignItems: 'center',
     justifyContent: 'space-evenly',
   },

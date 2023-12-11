@@ -46,12 +46,45 @@ function WeatherPosition() {
   return (
     <View>
       {loading ? (
-        <ActivityIndicator size="large" color="#0000ff" />
+        <ActivityIndicator size="large" color="#000000" />
       ) : position ? (
         <View>
           {temp ? (
-            <View style={{ left: -100 }}>
-              <Text style={{ fontSize: 40, fontWeight: "900" }}>jj</Text>
+            <View style={{ position: "absolute" }}>
+              <Text
+                style={{
+                  fontSize: 30,
+                  fontWeight: "900",
+                  color: "white",
+                  top: -100,
+                  left: 80,
+                }}
+              >
+                {Number(temp.main.temp - 273).toFixed(0)}°C
+              </Text>
+              <Text
+                style={{
+                  fontSize: 30,
+                  fontWeight: "900",
+                  color: "white",
+                  top: -100,
+                  left: 80,
+                }}
+              >
+                {Number(temp.main.pressure).toFixed(0)}Pa
+              </Text>
+
+              <Text
+                style={{
+                  fontSize: 30,
+                  fontWeight: "900",
+                  color: "white",
+                  top: -100,
+                  left: 80,
+                }}
+              >
+                {temp.weather[0].main}
+              </Text>
             </View>
           ) : (
             <Text>Weather data not available</Text>
