@@ -25,7 +25,7 @@ const Clock = () => {
           cy={180}
           r={170}
           stroke="white"
-          strokeWidth={10}
+          strokeWidth={0}
           fill={"black"}
         />
         {/* Hour hand */}
